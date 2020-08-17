@@ -5,3 +5,4 @@ app.py is the flask code
 intern.html is the website
 style.css is the static file
 sujan.h5 is the model
+Data.rar contains the data set
