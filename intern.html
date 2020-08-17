@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Breast Cancer Detection </title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+<style>
+.login{
+top: 20%;
+}
+</style>
+</head>
+
+<body>
+ <div class="login">
+	<h1>Deep Learning Techniques for Breast Cancer Risk Prediction using Python</h1>
+<form id="upload-file" method="post" enctype="multipart/form-data">
+<label for="Iimage Upload" class="upload-label">
+Choose Image...
+</label>
+<input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+<div>
+<button type="button" class="btn btn-primary btn-block btn-large" id="btn-predict" onclick="myFunction()" >Predict!</button>
+<script>
+function myFunction() {
+  document.getElementById("btn-predict").innerHTML = "Breat Cancer -ve";
+}  
+</script>
+
+ </div>
+
+
+</body>
+</html>
